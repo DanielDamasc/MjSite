@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+/* Aqui definimos a sua paleta de cores personalizada */
+@theme {
+  --color-primary: #0C6AC2;
+  --color-accent: #F0ED35;
+  --color-neutral: #B7BABD;
+}
+
+/* Opcional: melhorando a renderização base */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: white;
+    color: #1e293b; /* slate-800 */
+    -webkit-font-smoothing: antialiased;
+  }
+}
