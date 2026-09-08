@@ -29,6 +29,9 @@
           <a href="#servicos" class="text-sm font-semibold uppercase tracking-wider hover:text-accent transition-colors">
             Serviços
           </a>
+          <a href="#avaliacoes" class="text-sm font-semibold uppercase tracking-wider hover:text-accent transition-colors">
+            Avaliações
+          </a>
           <a href="#contato" class="text-sm font-semibold uppercase tracking-wider hover:text-accent transition-colors">
             Contato
           </a>
@@ -55,6 +58,7 @@
         <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white shadow-lg flex-col items-center py-6 gap-4 border-t border-slate-100 md:hidden">
           <a href="#sobre" class="text-sm font-semibold uppercase hover:text-accent">Sobre nós</a>
           <a href="#servicos" class="text-sm font-semibold uppercase hover:text-accent">Serviços</a>
+          <a href="#avaliacoes" class="text-sm font-semibold uppercase hover:text-accent">Avaliações</a>
           <a href="#contato" class="text-sm font-semibold uppercase hover:text-accent">Contato</a>
         </div>
 
@@ -137,7 +141,7 @@
           <!-- Espaço Imagem -->
           <div class="relative h-[30rem] w-full rounded-2xl overflow-hidden shadow-xl flex items-center justify-center">
             <img 
-              src="/src/assets/equipe.jpeg" 
+              src="/src/assets/equipe.jpg" 
               alt="Equipe de engenheiros e técnicos da MJ Engenharia"
               class="object-cover w-full h-full"
             >
@@ -217,6 +221,132 @@
           </div>
 
         </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO AVALIAÇÕES -->
+    <section id="avaliacoes" class="py-24 bg-white border-t border-slate-100">
+      <div class="max-w-7xl mx-auto px-6">
+        
+        <!-- Cabeçalho da Seção -->
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <h2 class="text-primary font-bold tracking-wider uppercase text-sm mb-2">Avaliações do Google</h2>
+          <h3 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">O que nossos clientes dizem</h3>
+          <div class="flex items-center justify-center gap-2">
+            <!-- Nota em Destaque -->
+            <span class="text-2xl font-black text-slate-900">5.0</span>
+            <div class="flex text-amber-400">
+              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+            </div>
+            <span class="text-slate-500 text-sm font-medium ml-1">(Baseado em avaliações verificadas)</span>
+          </div>
+        </div>
+
+        <!-- Grid de Depoimentos -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- Card 1 -->
+          <div class="bg-slate-50 p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between relative group hover:shadow-md transition-shadow">
+            <div>
+              <div class="flex justify-between items-center mb-6">
+                <div class="flex text-amber-400">
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                </div>
+                <span class="text-xs font-bold text-slate-400 bg-white px-3 py-1 rounded-full border border-slate-200">Google Review</span>
+              </div>
+              <p class="text-slate-600 text-sm leading-relaxed mb-6 italic">
+                "Equipe muito capacitada. Profissionais muito prestativos. São credenciados para instalação de várias marcas de ar-condicionado. Tanto a instalação, quanto à manutenção, são excelentes. Fazem a limpeza e testes com nitrogênio. O responsável é engenheiro elétrico, o que traz mais segurança no processo. Preço justo também. Recomendo"
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-4 border-t border-slate-200/60">
+              <div class="w-10 h-10 bg-primary/10 text-primary font-bold rounded-full flex items-center justify-center">
+                LC
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm">Leandro Costa</h4>
+                <p class="text-xs text-slate-500">Climatização</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-slate-50 p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between relative group hover:shadow-md transition-shadow">
+            <div>
+              <!-- Ícone do Google / Aspas -->
+              <div class="flex justify-between items-center mb-6">
+                <div class="flex text-amber-400">
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                </div>
+                <span class="text-xs font-bold text-slate-400 bg-white px-3 py-1 rounded-full border border-slate-200">Google Review</span>
+              </div>
+              <p class="text-slate-600 text-sm leading-relaxed mb-6 italic">
+                "Atendimento de excelência, profissionais bem preparados para oferecer o melhor para o cliente. Preço justo."
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-4 border-t border-slate-200/60">
+              <div class="w-10 h-10 bg-primary/10 text-primary font-bold rounded-full flex items-center justify-center">
+                LM
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm">Lucas de Mendes</h4>
+                <p class="text-xs text-slate-500">Energia Solar</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bg-slate-50 p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between relative group hover:shadow-md transition-shadow">
+            <div>
+              <div class="flex justify-between items-center mb-6">
+                <div class="flex text-amber-400">
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                </div>
+                <span class="text-xs font-bold text-slate-400 bg-white px-3 py-1 rounded-full border border-slate-200">Google Review</span>
+              </div>
+              <p class="text-slate-600 text-sm leading-relaxed mb-6 italic">
+                "Ótimos profissionais! Instalação impecável. Gosteis muito dos testes realizados pós instalação, como o de vazamentos. Muito bom!"
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-4 border-t border-slate-200/60">
+              <div class="w-10 h-10 bg-primary/10 text-primary font-bold rounded-full flex items-center justify-center">
+                GV
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm">Guto Veloso</h4>
+                <p class="text-xs text-slate-500">Climatização</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12 text-center">
+          <a 
+            href="https://share.google/QJ9OXSHeYnMtkv21J" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="inline-flex items-center gap-2 text-sm font-bold text-primary bg-slate-100 hover:bg-primary hover:text-white px-6 py-3 rounded-xl transition-all border border-slate-200 shadow-sm group"
+          >
+            <i data-lucide="external-link" class="w-4 h-4 transition-transform group-hover:scale-110"></i>
+            Ver mais avaliações
+          </a>
+        </div>
+
       </div>
     </section>
 
