@@ -3,7 +3,14 @@
 /* Aqui definimos a sua paleta de cores personalizada */
 @theme {
   --color-primary: #0C6AC2;
-  --color-accent: #F0ED35;
+  
+  /* Laranja (Ambar) */
+  --color-accent: #F59E0B;
+
+  /* --color-accent: #F0ED35; */
+  /* --color-accent: #06B6D4; */
+  /* --color-accent: #1E293B; */
+
   --color-neutral: #B7BABD;
 }
 
