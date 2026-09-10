@@ -67,64 +67,70 @@
     </header>
 
     <!-- SEÇÃO INÍCIO (HERO) -->
-    <section id="inicio" class="relative bg-gradient-to-br from-primary to-slate-900 pt-20 pb-24 text-white">
-      <div class="max-w-7xl mx-auto px-6">
-        <div class="text-center max-w-4xl mx-auto mb-16">
+    <section id="inicio" class="relative overflow-hidden bg-slate-900 pt-20 pb-24 text-white">
+
+      <!-- Carrossel de fundo -->
+      <div id="hero-carousel" class="absolute inset-0 z-0" aria-hidden="true">
+        <div class="hero-slide absolute inset-0 opacity-100 transition-opacity duration-1000 ease-in-out" data-title="PROJETO E INSTALAÇÃO DE USINAS FOTOVOLTAICAS">
+          <img src="src/assets/fotovoltaico_solo.jpeg" alt="" class="w-full h-full object-cover">
+        </div>
+        <div class="hero-slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out" data-title="LIMPEZA DE PAINÉIS SOLARES">
+          <img src="src/assets/escovao_limpeza.jpeg" alt="" class="w-full h-full object-cover">
+        </div>
+        <div class="hero-slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out" data-title="INSTALAÇÃO DE AR CONDICIONADO">
+          <img src="src/assets/instalacao_ar.jpg" alt="" class="w-full h-full object-cover">
+        </div>
+        <div class="hero-slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out" data-title="HIGIENIZAÇÃO DE AR CONDICIONADO">
+          <img src="src/assets/higienizacao_ar.webp" alt="" class="w-full h-full object-cover">
+        </div>
+        <!-- Overlay para legibilidade do texto -->
+        <div class="absolute inset-0 bg-gradient-to-br from-primary/85 to-slate-900/90"></div>
+      </div>
+
+      <div class="relative z-10 max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-4xl mx-auto">
           <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">
             Soluções completas em energia solar e climatização com a <span class="text-accent underline decoration-white/30 underline-offset-8">MJ Engenharia</span>
           </h1>
           <p class="text-lg md:text-xl text-blue-100 mb-10 max-w-2xl mx-auto">
             Excelência técnica e atendimento especializado para maximizar sua eficiência energética.
           </p>
-          <a 
-            href="https://wa.me/553899886614" 
-            target="_blank" 
-            rel="noopener noreferrer" 
+          <a
+            href="https://wa.me/553899886614"
+            target="_blank"
+            rel="noopener noreferrer"
             class="inline-block bg-accent text-white font-bold text-lg px-8 py-4 rounded-full hover:bg-primary hover:shadow-xl hover:-translate-y-1 transition-all duration-300 shadow-lg"
           >
             Solicitar Orçamento
           </a>
         </div>
 
-        <!-- Grid de Serviços -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
+        <!-- Controles do carrossel -->
+        <div class="mt-16 flex items-center justify-center gap-5">
+          <button
+            id="hero-prev"
+            type="button"
+            aria-label="Serviço anterior"
+            class="w-12 h-12 shrink-0 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 transition-all group"
+          >
+            <i data-lucide="chevron-left" class="w-6 h-6 transition-transform group-hover:-translate-x-0.5"></i>
+          </button>
 
-          <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl overflow-hidden hover:bg-white/20 transition-all group">
-            <div class="h-40 w-full overflow-hidden">
-              <img src="src/assets/fotovoltaico_solo.jpeg" alt="Projeto e instalação de usinas fotovoltaicas" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-            </div>
-            <div class="p-5">
-              <h3 class="font-bold text-base uppercase tracking-wide">PROJETO E INSTALAÇÃO DE USINAS FOTOVOLTAICAS</h3>
-            </div>
+          <div class="flex flex-col items-center gap-3 min-w-0">
+            <span id="hero-caption" class="text-sm md:text-base font-bold uppercase tracking-wide text-center">
+              PROJETO E INSTALAÇÃO DE USINAS FOTOVOLTAICAS
+            </span>
+            <div id="hero-dots" class="flex items-center justify-center gap-2"></div>
           </div>
 
-          <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl overflow-hidden hover:bg-white/20 transition-all group">
-            <div class="h-40 w-full overflow-hidden">
-              <img src="src/assets/escovao_limpeza.jpeg" alt="Limpeza de painéis solares" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-            </div>
-            <div class="p-5">
-              <h3 class="font-bold text-base uppercase tracking-wide">LIMPEZA DE PAINÉIS SOLARES</h3>
-            </div>
-          </div>
-
-          <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl overflow-hidden hover:bg-white/20 transition-all group">
-            <div class="h-40 w-full overflow-hidden">
-              <img src="src/assets/instalacao_ar.jpg" alt="Instalação de ar condicionado" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-            </div>
-            <div class="p-5">
-              <h3 class="font-bold text-base uppercase tracking-wide">INSTALAÇÃO DE AR CONDICIONADO</h3>
-            </div>
-          </div>
-
-          <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl overflow-hidden hover:bg-white/20 transition-all group">
-            <div class="h-40 w-full overflow-hidden">
-              <img src="src/assets/higienizacao_ar.webp" alt="Higienização de ar condicionado" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-            </div>
-            <div class="p-5">
-              <h3 class="font-bold text-base uppercase tracking-wide">HIGIENIZAÇÃO DE AR CONDICIONADO</h3>
-            </div>
-          </div>
-
+          <button
+            id="hero-next"
+            type="button"
+            aria-label="Próximo serviço"
+            class="w-12 h-12 shrink-0 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 transition-all group"
+          >
+            <i data-lucide="chevron-right" class="w-6 h-6 transition-transform group-hover:translate-x-0.5"></i>
+          </button>
         </div>
       </div>
     </section>
